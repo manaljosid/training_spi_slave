@@ -1,0 +1,28 @@
+# do {C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\sim_if\tcl_read_eval_loop.tcl}
+# vsim -modelsimini C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/modelsim/modelsim.ini -wlf C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.spi_slave_tb.receive_one_byte3a1fdfe08b45a7bb5f5c121ee5c172b3a3b62786/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.spi_slave_tb -L vunit_lib -L lib -g/spi_slave_tb/runner_cfg="active python runner : true,enabled_test_cases : receive_one_byte,output path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.spi_slave_tb.receive_one_byte3a1fdfe08b45a7bb5f5c121ee5c172b3a3b62786/,tb path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/spi_slave/,use_color : true" 
+# Start time: 22:40:34 on Dec 27,2022
+# ** Error: CHECK_EQUAL failed! Got dut_data_out=0 expected 77.
+#    Time: 33005 ns  Scope: spi_slave_tb File: C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/spi_slave/spi_slave_tb.sv Line: 57
+# Break in Module spi_slave_tb at C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/spi_slave/spi_slave_tb.sv line 57
+# Stopped at C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/spi_slave/spi_slave_tb.sv line 57
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/spi_slave/spi_slave_tb.sv 57 return [address 0xff0c318d] Module spi_slave_tb
+# 
+# 
+# Surrounding code from 'see' command
+#   52 :         `TEST_CASE("receive_one_byte") begin
+#   53 :             dut_cs = 1'b0;
+#   54 :             send_byte(77, dut_mosi, dut_sck, 1000000);
+#   55 :             dut_cs = 1'b1;
+#   56 :             @(posedge clk iff dut_data_ready == 1'b1);
+# ->57 :             `CHECK_EQUAL(dut_data_out, 77);
+#   58 :         end
+#   59 :    end
+#   60 : 
+#   61 :    `WATCHDOG(0.1ms);
+# 
+# End time: 22:40:34 on Dec 27,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

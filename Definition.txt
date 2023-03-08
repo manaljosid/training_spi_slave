@@ -1,0 +1,56 @@
+Register map:
+0x0 - AVMM_ADDR0
+0x1 - AVMM_ADDR1
+0x2 - AVMM_ADDR2
+0x3 - AVMM_ADDR3
+0x4 - AVMM_DATA0
+0x5 - AVMM_DATA1
+0x6 - AVMM_DATA2
+0x7 - AVMM_DATA3
+0x8 - AVMM_CONTROL
+
+Write transaction
+    MOSI -> [1 - R/Wn][7 - REG_ADDR][32 - AVMM_ADDR][32 - AVMM_DATA][8 - AVMM_CONTROL]
+    MISO <- Nothing
+    MOSI total 6 bytes (48 bits)
+    MISO total 0 bytes (0  bits)
+
+Read transaction
+    MOSI -> [1 - R/Wn][7 - REG_ADDR]
+    MISO <- [to end of register - DATA]
+    MOSI total 1 byte  (8  bits)
+    MISO total 4 bytes (32 bits)
+
+
+MCU wants to write to Avalon register 0xCBA0 the data value of 0x3254
+    SPI write transaction
+        Write b0 - R/Wn set to WRITE
+        Write b000 0000 - Register at address 0 (start of Avalon addr reg)
+        Write h0, hA, hB, hC - Avalon addr reg
+        Write h4, h5, h2, h3 - Avalon data reg
+        Write b0000 0001 - Set control reg to WRITE busy
+    
+    while(1):
+        SPI read transaction
+            Write b1 - R/Wn bit set to READ
+            Write b000 1000 - Register at address 8 (start of control reg)
+            Read 1 byte (break if read as 0, keep trying if read as 1 or 2)
+
+MCU wants to read from Avalon register 0xCBA0
+    SPI write transaction
+        Write b0 - R/Wn bit set to WRITE
+        Write b000 0000 - Register at address 0 (start of Avalon addr reg)
+        Write h0, hA, hB, hC - Avalon addr reg
+        Write hX, hX, hX, hX - Avalon data reg (random data)
+        Write b0000 0010 - Set control reg to READ busy
+
+    while(1):
+        SPI read transaction
+            Write b1 - R/Wn bit set to READ
+            Write b000 1000 - Register at address 8 (start of control reg)
+            Read 1 byte (break if read as 0, keep trying if read as 1 or 2)
+    
+    SPI read transaction
+        Write b1 - R/Wn bit set to READ
+        Write b000 0100 - Register at address 4 (start of Avalon data reg)
+        Read 4 bytes (the data from Avalon Read)

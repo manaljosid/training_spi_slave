@@ -1,0 +1,25 @@
+# do {C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\sim_if\tcl_read_eval_loop.tcl}
+# vsim -modelsimini C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/modelsim/modelsim.ini -wlf C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.example_tb.INVERTER_0.test_ze945411b04e73f7c74d3f369c5ef2d26c29678beb/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.example_tb -L vunit_lib -L lib -g/example_tb/runner_cfg="active python runner : true,enabled_test_cases : test_zero,output path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.example_tb.INVERTER_0.test_ze945411b04e73f7c74d3f369c5ef2d26c29678beb/,tb path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/example/,use_color : true" -g/example_tb/INVERTER=0 
+# Start time: 01:20:21 on Dec 26,2022
+# Break in Function vunit_pkg/test_runner::cleanup at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# End time: 01:20:21 on Dec 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -modelsimini C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/modelsim/modelsim.ini -wlf C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.example_tb.INVERTER_1.test_zeb0120b1e486f202714b05764a2a0b655e06f9d94/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.example_tb -L vunit_lib -L lib -g/example_tb/runner_cfg="active python runner : true,enabled_test_cases : test_zero,output path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.example_tb.INVERTER_1.test_zeb0120b1e486f202714b05764a2a0b655e06f9d94/,tb path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/example/,use_color : true" -g/example_tb/INVERTER=1 
+# Start time: 01:20:21 on Dec 26,2022
+# Break in Function vunit_pkg/test_runner::cleanup at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# End time: 01:20:22 on Dec 26,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -modelsimini C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/modelsim/modelsim.ini -wlf C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.example_tb.INVERTER_0.test_on5a1c2fa73cdd79997546dffe743c1c196543eca2/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.example_tb -L vunit_lib -L lib -g/example_tb/runner_cfg="active python runner : true,enabled_test_cases : test_one,output path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.example_tb.INVERTER_0.test_on5a1c2fa73cdd79997546dffe743c1c196543eca2/,tb path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/example/,use_color : true" -g/example_tb/INVERTER=0 
+# Start time: 01:20:22 on Dec 26,2022
+# Break in Function vunit_pkg/test_runner::cleanup at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# End time: 01:20:22 on Dec 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -modelsimini C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/modelsim/modelsim.ini -wlf C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.example_tb.INVERTER_1.test_on5f151973d59fea22fdf3796cfbbffcc74ad7149a/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.example_tb -L vunit_lib -L lib -g/example_tb/runner_cfg="active python runner : true,enabled_test_cases : test_one,output path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.example_tb.INVERTER_1.test_on5f151973d59fea22fdf3796cfbbffcc74ad7149a/,tb path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/example/,use_color : true" -g/example_tb/INVERTER=1 
+# Start time: 01:20:22 on Dec 26,2022
+# Break in Function vunit_pkg/test_runner::cleanup at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# End time: 01:20:23 on Dec 26,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

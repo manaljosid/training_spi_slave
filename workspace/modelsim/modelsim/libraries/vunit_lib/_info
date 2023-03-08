@@ -1,0 +1,37 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Mani/Documents/Projects/Templates/FPGA_template/python/tb/example
+Xvunit_pkg
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1672011256
+!i10b 1
+!s100 ]FG:n[Imc@B;PU8jlm@9<1
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IUE@iS@EGA3ghTDUZHU[Ja2
+VUE@iS@EGA3ghTDUZHU[Ja2
+S1
+R0
+w1669552792
+8C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\verilog\vunit_pkg.sv
+FC:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\verilog\vunit_pkg.sv
+!i122 0
+L0 7 0
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1672011256.000000
+!s107 C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\verilog\vunit_pkg.sv|
+!s90 -quiet|-modelsimini|C:\Users\Mani\Documents\Projects\Templates\FPGA_template\workspace\modelsim\modelsim\modelsim.ini|-sv|-suppress|12110|-work|vunit_lib|C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\verilog\vunit_pkg.sv|-L|vunit_lib|-L|lib|+incdir+C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\verilog\include|
+!i113 1
+o-suppress 12110 -quiet -sv -work vunit_lib -L vunit_lib -L lib
+!s92 -suppress 12110 -quiet -sv -work vunit_lib -L vunit_lib -L lib {+incdir+C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\verilog\include}
+tCvgOpt 0

@@ -1,0 +1,10 @@
+# do {C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\sim_if\tcl_read_eval_loop.tcl}
+# vsim -modelsimini C:/Users/Mani/Documents/Projects/Templates/FPGA_template/workspace/modelsim/modelsim/modelsim.ini -wlf C:/Users/Mani/Documents/Projects/Templates/FPGA_template/workspace/modelsim/test_output/lib.example_tb.INVERTER_1.test_on5f151973d59fea22fdf3796cfbbffcc74ad7149a/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.example_tb -L vunit_lib -L lib -g/example_tb/runner_cfg="active python runner : true,enabled_test_cases : test_one,output path : C::/Users/Mani/Documents/Projects/Templates/FPGA_template/workspace/modelsim/test_output/lib.example_tb.INVERTER_1.test_on5f151973d59fea22fdf3796cfbbffcc74ad7149a/,tb path : C::/Users/Mani/Documents/Projects/Templates/FPGA_template/rtl/sim/example/,use_color : true" -g/example_tb/INVERTER=1 
+# Start time: 23:34:24 on Dec 25,2022
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'example_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /example_tb/DUT File: C:/Users/Mani/Documents/Projects/Templates/FPGA_template/rtl/syn/example/example.sv
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'vunit_pkg' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /example_tb/DUT File: C:/Users/Mani/Documents/Projects/Templates/FPGA_template/rtl/syn/example/example.sv
+# Error loading design
+# End time: 23:34:24 on Dec 25,2022, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0

@@ -1,0 +1,28 @@
+# do {C:\Users\Mani\AppData\Local\Programs\Python\Python311\Lib\site-packages\vunit\sim_if\tcl_read_eval_loop.tcl}
+# vsim -modelsimini C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/modelsim/modelsim.ini -wlf C:/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.spi_slave_tb.receive_one_byte3a1fdfe08b45a7bb5f5c121ee5c172b3a3b62786/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.spi_slave_tb -L vunit_lib -L lib -g/spi_slave_tb/runner_cfg="active python runner : true,enabled_test_cases : receive_one_byte,output path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/workspace/modelsim/test_output/lib.spi_slave_tb.receive_one_byte3a1fdfe08b45a7bb5f5c121ee5c172b3a3b62786/,tb path : C::/Users/Mani/Documents/Projects/FPGA/Training_SPI_slave/rtl/sim/spi_slave/,use_color : true" 
+# Start time: 19:43:08 on Dec 27,2022
+# ** Error: Timeout waiting finish after 100000.000 ns
+#    Time: 100 us  Scope: vunit_pkg.test_runner.watchdog.wait_or_timeout File: C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv Line: 221
+# Break in NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# Stopped at C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Mani/AppData/Local/Programs/Python/Python311/Lib/site-packages/vunit/verilog/vunit_pkg.sv 221 return [address 0xff0c6458] NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout
+# 
+# 
+# Surrounding code from 'see' command
+#   216 : 
+#   217 :    task automatic watchdog(real timeout_in_ns);
+#   218 :       fork : wait_or_timeout
+#   219 :          begin
+#   220 :             #(timeout_in_ns * 1ns);
+# ->221 :             $error("Timeout waiting finish after %.3f ns", timeout_in_ns);
+#   222 :             disable wait_or_timeout;
+#   223 :          end
+#   224 :          begin
+#   225 :             @(posedge exit_without_errors);
+# 
+# End time: 19:43:08 on Dec 27,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
